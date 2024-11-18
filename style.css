@@ -11,6 +11,24 @@
     font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
+    transition-property: padding, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.btn:hover {
+    animation: rotate360 1s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .btn-white {
